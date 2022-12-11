@@ -113,7 +113,7 @@ The Application provides mainly three functional interfaces
 
     * Front end to register sensors and sending in its readings.
     * Integrate the Application with Front End UI to make the app interactive
-    * Test Code Coverage percentage for the Application is Around 75-80% . 
+    * Test Code Coverage percentage for the Application is Around 70-75% . 
       Further tests and Unit tests can be included 
     * Add Authentication for restapis. Add seperate authorization for registering the sensors (An admin can only register the sensors)
       and seperate for Reading the sensor values API (Typically APi used by the customer)
