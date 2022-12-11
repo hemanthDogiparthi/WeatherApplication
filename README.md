@@ -5,7 +5,7 @@
 The Application provides mainly three functional interfaces 
 1. To register a sensor. 
    A sensor can be registered with its details like name, city , country 
-2. Once Registerd a Sensor can send in its weather readings to the applciation. These include details like 
+2. Once Registerd, a Sensor can send in its weather readings to the applciation. These include details like 
    humidity, windspeed, temperature etc.
 3. User can retrieve the details based on various parameters like  average temperature and humidity for sensor 1 
    in the last 'N' number of days or based on a date range.
@@ -21,8 +21,10 @@ The Application provides mainly three functional interfaces
 
   Check for the versions 
 
-  javac -version
+  java -version
   mvn -version
+  
+  OR just have docker installed. 
 
 ## Building the Project
 
@@ -31,6 +33,7 @@ The Application provides mainly three functional interfaces
 ## Running the Application
  
   ** You can navigate to the root folder of the application and run : 'mvn spring-boot:run'
+     or run docker-compose up --build
 
 
 ## Access the REST APIs
@@ -41,7 +44,7 @@ The Application provides mainly three functional interfaces
       Description: One Sensor or Multiple Sensors can be registered here.
 	
 	* Sensor                                                       
-	[{"country":"ireland","city":"athlone","name":"sensor 1"},{"country":"ireland","city":"athlone","name":"sensor 2"}]
+	[{"country":"ireland","city":"Athlone","name":"sensor 1"},{"country":"ireland","city":"Galway","name":"sensor 2"}]
 
 	
 
@@ -111,7 +114,7 @@ The Application provides mainly three functional interfaces
     * Front end to register sensors and sending in its readings.
     * Integrate the Application with Front End UI to make the app interactive
     * Test Code Coverage percentage for the Application is Around 75-80% . 
-      Further tests can be included 
+      Further tests and Unit tests can be included 
     * Add Authentication for restapis. Add seperate authorization for registering the sensors (An admin can only register the sensors)
       and seperate for Reading the sensor values API (Typically APi used by the customer)
     
