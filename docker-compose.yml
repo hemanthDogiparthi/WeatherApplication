@@ -1,0 +1,15 @@
+version: '1'
+services:
+    weather-application:
+        container_name: weather-application
+        build:
+            context: ../WeatherApplication
+            dockerfile: Dockerfile
+        image: weather-application:latest
+        ports:
+            - 8887:5000
+        networks:
+            - spring-cloud-network
+networks:
+    spring-cloud-network:
+        driver: bridge
